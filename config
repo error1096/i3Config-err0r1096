@@ -195,7 +195,7 @@ bar {
 bindsym $mod+shift+x exec i3lock
 bindsym $mod+shift+f exec konqueror
 
-exec_always exec feh --bg-scale /home/err0r1096/Pictures/age.jpg
+exec_always exec feh --bg-scale /home/err0r1096/Pictures/wal.png
 
 # Pulse Audio controls
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +5% #increase sound volume
