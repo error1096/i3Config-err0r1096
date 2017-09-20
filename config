@@ -125,6 +125,7 @@ assign [class="TelegramDesktop"] 3 : TeleGram 
 assign [class="Gnome-terminal"] 1 : Terminals  
 assign [class="Gwenview"] 5 : Files 
 assign [class="Konqueror"] 5 : Files 
+assign [class="jetbrains-android-studio"] Code 
 
 
 
@@ -135,7 +136,9 @@ bindsym $mod+Shift+c reload
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
 bindsym $mod+Shift+r restart
 # exit i3 (logs you out of your X session)
-bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'Wtf  Err0r1096 Do You Want Left Me ? This will end us session.' -b 'Yep :)' 'i3-ms`g exit'"
+bindsym $Mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
+
+
 
 set $bg-color 	         #1c1b1b
 set $inactive-bg-color   #1c1b1b
@@ -195,7 +198,7 @@ bar {
 bindsym $mod+shift+x exec i3lock
 bindsym $mod+shift+f exec konqueror
 
-exec_always exec feh --bg-scale /home/err0r1096/Pictures/wal.png
+exec_always exec feh --bg-scale /home/err0r1095/Pictures/wal.png
 
 # Pulse Audio controls
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +5% #increase sound volume
